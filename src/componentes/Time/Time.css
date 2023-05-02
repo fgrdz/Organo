@@ -16,3 +16,21 @@
     margin-top: 32px;
     flex-wrap: wrap;
 }
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    font-size: 28px;
+    font-weight: 100;
+    padding: 8px;
+    margin-bottom: 32px;
+}
+.titulo h3{
+    
+    color: #6278f7;
+    text-align: center;
+    border-bottom: 4px solid ;
+    padding: 8px;
+}
+
