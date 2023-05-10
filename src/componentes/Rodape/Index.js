@@ -27,7 +27,7 @@ const Rodape = ()=>{
 
             </section>
             <section className='texto'>
-                <p>Desenvolvido por Alura</p>
+                <p>Desenvolvido por Fgrdz</p>
             </section>
 
         </footer>

@@ -17,3 +17,8 @@
 .footer a :hover{
     filter: invert(75%);
 }
+.imagem img{
+    width: 240px;
+    height: 240px;
+    
+}

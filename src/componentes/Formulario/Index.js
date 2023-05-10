@@ -7,7 +7,7 @@ import './Formulario.css'
 
 
 
-const Formulario = (props)=>{
+const Formulario = ({aoColaboradorCadastrado, times})=>{
 
     
     const[nome, setNome] = useState('')
@@ -22,17 +22,14 @@ const Formulario = (props)=>{
     
     const aoSalvar = (evento) => {
         evento.preventDefault()
-        props.aoColaboradorCadastrado ({
+        aoColaboradorCadastrado ({
             nome,
             cargo,
             imagem,
             time
             
         })
-        setNome('')
-        setCargo('')
-        setImagem('')
-        setTime('')
+
     }
     return(
         <section className="Formulario">
@@ -46,12 +43,12 @@ const Formulario = (props)=>{
                 <ListaSuspensa 
                     obrigatorio={true}
                     label="Time" 
-                    itens={props.times} 
+                    itens={times} 
                     valor = {time} 
                     aoAlterado={valor=> setTime(valor)}/>
                
-                <Botao >
-                    Criar card 
+                <Botao texto='Criar Card'>
+                     
                 </Botao>
                 
             </form>
